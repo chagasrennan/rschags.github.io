@@ -3,3 +3,10 @@ logo: /assets/img/rennan_chagas_sq.jpg
 #description: text below image
 # show_downloads: true
 theme: jekyll-theme-minimal
+
+social-network-links:
+  email: "chagasrennan@gmail.com"
+  # rss: true  # remove this line if you don't want to show an RSS link at the bottom
+  linkedin: rseimetz
+  github: chagasrennan
+  whatsapp: +5521982295186
