@@ -18,7 +18,7 @@ Member of global data science team responsible designing models and data process
 - Optimization of offshore windfarm systems 
 - Implementation of an AI governance framework
 
-**Researcher @ LORDE | COPPE / UFRJ (_Aug 2013 - Sep 2022_)**
+**Researcher @ LORDE (COPPE / UFRJ) (_Aug 2013 - Sep 2022_)**
 
 Analytics and optimization projects applied to oil & gas industry. Port
 operational efiiciency improvement through berth scheduling and
