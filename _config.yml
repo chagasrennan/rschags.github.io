@@ -5,10 +5,10 @@ birthday: 15 September 1992
 phone: +55 21 982295186
 linkedin: rseimetz
 about: I am a 31 years old Brazilian with a PhD in Industrial Engineering & OR. For 12 years I've been responsible for providing optimization and analytics solutions in different fields such as logistics, marketing science, software development, and consulting.
-skills:
-  - programing: Python, VBA, SQL, C++, Git
-  - modeling: Gurobi, PuLP, Scikit-learn, Scipy
-  - cloud: Snowflake, BigQuery, AWS, DBT
+
+programing: Python, VBA, SQL, C++, Git
+modeling: Gurobi, PuLP, Scikit-learn, Scipy
+cloud: Snowflake, BigQuery, AWS, DBT
 
 # show_downloads: true
 theme: jekyll-theme-minimal
