@@ -8,6 +8,36 @@
 - B.S., Industrial Engineering - UFF (_Dec 2012_)
 
 
+<p style="text-align:justify;">&nbsp;</p>
+<p style="text-align:justify;">&nbsp;</p>
+<figure class="table" style="width:64.12%;">
+    <table class="ck-table-resized">
+        <colgroup>
+            <col style="width:10%;">
+            <col style="width:80%;">
+            <col style="width:10%;">
+        </colgroup>
+        <tbody>
+            <tr>
+                <td><span style="font-size:14px;">2015-2022</span></td>
+                <td>DSc.  <span style="font-size:14px;">in Industrial Engineering</span></td>
+                <td>UFRJ</td>
+            </tr>
+            <tr>
+                <td><span style="font-size:14px;">2013-2014</span></td>
+                <td>M.Sc.  <span style="font-size:14px;">in Industrial Engineering</span></td>
+                <td>UFRJ</td>
+            </tr>
+            <tr>
+                <td><span style="font-size:14px;">2008-2013</span></td>
+                <td>B.Sc.  <span style="font-size:14px;">in Industrial Engineering</span></td>
+                <td>UFF</td>
+            </tr>
+        </tbody>
+    </table>
+</figure>
+
+
 ## Work Experience
 **Data Scientist @ TechnipFMC (_Mar 2022 - Present_)**
 
