@@ -36,7 +36,13 @@
         {% endif %}
         
         {% if site.about %}
+        <h3>About me</h3>
         <p>{{ site.about }}</p>
+        {% endif %}
+        
+        {% if site.skills %}
+        <h3>Skills</h3>
+        <p>{{ site.skill.programing }}</p>
         {% endif %}
 
         <!-- {% if site.github.is_project_page %}
