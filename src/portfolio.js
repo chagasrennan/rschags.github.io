@@ -119,8 +119,8 @@ const educationInfo = {
     {
       schoolName: "Federal University of Rio de Janeiro - UFRJ",
       logo: require("./assets/images/ufrj-vertical-cor-rgb-telas.png"),
-      subHeader: "Master of Science in Industrial Engineering - Operations Research",
-      duration: "March 2013 - May 2015",
+      subHeader: "Doctor of Science in Industrial Engineering - Operations Research",
+      duration: "June 2015 - September 2022",
       desc: "Planning offshore supply deliveries with multiproduct vessels",
       descBullets: [
         "Interniship at CIRRELT - Centre interuniversitaire de recherche sur les reseaux d'entreprise, la logistique et le transport. Montreal - Canada",
@@ -129,8 +129,8 @@ const educationInfo = {
     {
       schoolName: "Federal University of Rio de Janeiro - UFRJ",
       logo: require("./assets/images/ufrj-vertical-cor-rgb-telas.png"),
-      subHeader: "Doctor of Science in Industrial Engineering - Operations Research",
-      duration: "June 2015 - September 2022",
+      subHeader: "Master of Science in Industrial Engineering - Operations Research",
+      duration: "March 2013 - May 2015",
       desc: "The Berth Scheduling Problem for Offshore Supply Operations",
       // descBullets: [
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
@@ -281,55 +281,59 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "ANP Award for Technological Innovation",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+        "Finalist - 2018",
+      image: require("./assets/images/Anp-logo-3.png"),
+      imageAlt: "ANP Prize",
       footerLink: [
         {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+          name: "View ANP website (portuguese only)",
+          url: "https://www.gov.br/anp/pt-br/assuntos/tecnologia-meio-ambiente/premio-anp-inovacao-tecnologica/edicoes-anteriores/premio-anp-inovacao-tecnologica-2018"
         },
+      ]
+    },
+    {
+      title: "Brazilian Physics Olympiad",
+      subtitle:
+        "Silver Medal - 2007",
+      image: require("./assets/images/obf.webp"),
+      imageAlt: "Obf",
+      footerLink: [
         {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+          name: "OBF Website",
+          url: "https://sec.sbfisica.org.br/olimpiadas/obf2007/resultadofinal_1serie.htm"
         }
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "Rio de Janeiro State Chemistry Olympiad",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+        "Silver Medal  - 2007 ",
+      image: require("./assets/images/oqrj.jpeg"),
+      imageAlt: "Oqrj",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          name: "OQRJ Website",
+          url: ""
         }
       ]
     },
-
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
+      title: "Rio de Janeiro State Mathematics Olympiad",
+      subtitle:
+        "Bonze Medal  - 2007",
+      image: require("./assets/images/omerj_sq.png"),
+      imageAlt: "Omerj",
       footerLink: [
-        {name: "Certification", url: ""},
         {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "OMERJ Website",
+          url: "https://sites.google.com/site/omerj314/lista-de-premiados?authuser=0"
         }
       ]
-    }
+    },
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -401,8 +405,8 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  // number: "+92-0000000000",
+  email_address: "chagasrennan@gmail.com"
 };
 
 // Twitter Section
