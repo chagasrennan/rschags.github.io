@@ -1,5 +1,5 @@
 {
-  "homepage": "https://chagasrennan.github.io/rschags.github.io/",
+  "homepage": "https://github.com/chagasrennan/rschags.github.io/",
   "name": "rennanchagas",
   "version": "0.1.0",
   "private": true,
@@ -23,9 +23,9 @@
   },
   "scripts": {
     "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "node fetch.js && react-scripts start",
     "build": "node fetch.js && react-scripts build",
-    "deploy": "gh-pages -b master -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "prettier --write \"./**/*.{js,css,json,scss}\"",
