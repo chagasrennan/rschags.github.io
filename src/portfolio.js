@@ -401,6 +401,60 @@ const resumeSection = {
   display: false // Set false to hide this section, defaults to true
 };
 
+// Publications Section
+
+const publicationInfo = {
+  display: true, // Set false to hide this section, defaults to true
+  schools: [
+    {
+      schoolName: "Relax-and-fix heuristics for the Multi-Commodity PSV Planning Problem with Order Selection and Time Window Decisions",
+      logo: require("./assets/images/academic.png"),
+      subHeader: "Computers & Industrial Engineering",
+      duration: "March 2023",
+      desc: "https://doi.org/10.1016/j.cie.2023.109040",
+      // descBullets: [
+      //   "",
+      // ]
+    },
+    {
+      schoolName: "A solution framework for the integrated periodic supply vessel planning and port scheduling in oil and gas supply logistics",
+      logo: require("./assets/images/academic.png"),
+      subHeader: "Optimization and Engineering",
+      duration: "April 2022",
+      desc: "https://doi.org/10.1007/s11081-022-09723-6",
+    },
+    {
+      schoolName: "A solution framework for the integrated problem of cargo assignment, fleet sizing, and delivery planning in offshore logistics",
+      logo: require("./assets/images/academic.png"),
+      subHeader: "Computers & Industrial Engineering",
+      duration: "November 2021",
+      desc: "https://doi.org/10.1016/j.cie.2021.107653",
+    },
+    {
+      schoolName: "Programação de Cargas em Barcos de Suprimento de Unidades Marítimas",
+      logo: require("./assets/images/conference.png"),
+      subHeader: "Anais do Simpósio Brasileiro de Pesquisa Operacional",
+      duration: "2018",
+      desc: "https://doi.org/10.59254/sbpo-2018-85367",
+    },
+    {
+      schoolName: "Decision suport tool applied to supply vessel scheduling in offshore logistics",
+      logo: require("./assets/images/conference.png"),
+      subHeader: "Rio Oil & Gas Conference, 19., 2018, Rio de Janeiro",
+      duration: "2018",
+      desc: "https://biblioteca.ibp.org.br/scripts/bnmapi.exe?router=upload/32127",
+    },
+    {
+      schoolName: "The problem of scheduling offshore supply port operations",
+      logo: require("./assets/images/conference.png"),
+      subHeader: "XVIII Latin-Iberoamerican Conference on Operations Research, CLAIO 2016",
+      duration: "2018",
+      desc: "https://easychair.org/smart-program/CLAIO-2016/2016-10-03.html#talk:32088",
+    },
+  ]
+};
+
+
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
@@ -430,6 +484,7 @@ export {
   openSource,
   bigProjects,
   achievementSection,
+  publicationInfo,
   blogSection,
   talkSection,
   podcastSection,
