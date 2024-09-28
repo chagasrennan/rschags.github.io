@@ -18,6 +18,12 @@
     url("./assets/fonts/VictorMonoNerdFontPropo-Regular.ttf") format("woff");
   font-display: swap;
 }
+@font-face {
+  font-family: "Caveat";
+  src: local("Caveat"),
+    url("./assets/fonts/Caveat-VariableFont_wght.ttf") format("woff");
+  font-display: swap;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
