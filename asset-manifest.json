@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/rschags.github.io/static/css/main.3aa4d2ca.css",
-    "main.js": "/rschags.github.io/static/js/main.113b9257.js",
+    "main.js": "/rschags.github.io/static/js/main.9376d394.js",
     "static/css/64.bba8fa55.chunk.css": "/rschags.github.io/static/css/64.bba8fa55.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/rschags.github.io/static/js/64.56dc6704.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/rschags.github.io/static/css/769.b3cbb36b.chunk.css",
@@ -9,11 +9,11 @@
     "static/media/VictorMonoNerdFontPropo-Regular.ttf": "/rschags.github.io/static/media/VictorMonoNerdFontPropo-Regular.48383b9cf696b265c86d.ttf",
     "static/media/Caveat-VariableFont_wght.ttf": "/rschags.github.io/static/media/Caveat-VariableFont_wght.31f0a02d84d42627c894.ttf",
     "static/media/Montserrat-Regular.ttf": "/rschags.github.io/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
-    "static/media/UFF_brasão.png": "/rschags.github.io/static/media/UFF_brasão.6ae33b3487109473d26a.png",
     "static/media/Agustina.woff": "/rschags.github.io/static/media/Agustina.eb0c59dda4cc308cba96.woff",
     "static/media/omerj_sq.png": "/rschags.github.io/static/media/omerj_sq.c871e43b2ad94d02de58.png",
     "static/media/rennan_chagas_sq.jpg": "/rschags.github.io/static/media/rennan_chagas_sq.1d00d9b2cde861e28670.jpg",
     "static/media/Anp-logo-3.png": "/rschags.github.io/static/media/Anp-logo-3.f92e095d5f997cabc116.png",
+    "static/media/UFF_brasao.png": "/rschags.github.io/static/media/UFF_brasao.c59f51d86e0bbe46d123.png",
     "static/media/cirrelt_logo.png": "/rschags.github.io/static/media/cirrelt_logo.d1e26064d127ecd0a4c8.png",
     "static/media/obf.webp": "/rschags.github.io/static/media/obf.b80c5078ddfc271da021.webp",
     "static/media/contactMailDark.svg": "/rschags.github.io/static/media/contactMailDark.1db650d351729a0f17b4e3104e6a7b7a.svg",
@@ -30,7 +30,7 @@
     "index.html": "/rschags.github.io/index.html",
     "static/media/talksCardBack.svg": "/rschags.github.io/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.3aa4d2ca.css.map": "/rschags.github.io/static/css/main.3aa4d2ca.css.map",
-    "main.113b9257.js.map": "/rschags.github.io/static/js/main.113b9257.js.map",
+    "main.9376d394.js.map": "/rschags.github.io/static/js/main.9376d394.js.map",
     "64.bba8fa55.chunk.css.map": "/rschags.github.io/static/css/64.bba8fa55.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/rschags.github.io/static/js/64.56dc6704.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/rschags.github.io/static/css/769.b3cbb36b.chunk.css.map",
@@ -38,6 +38,6 @@
   },
   "entrypoints": [
     "static/css/main.3aa4d2ca.css",
-    "static/js/main.113b9257.js"
+    "static/js/main.9376d394.js"
   ]
 }
