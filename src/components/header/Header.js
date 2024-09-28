@@ -9,6 +9,7 @@ import {
   skillsSection,
   openSource,
   blogSection,
+  publicationInfo,
   talkSection,
   achievementSection,
   resumeSection
@@ -21,6 +22,7 @@ function Header() {
   const viewSkills = skillsSection.display;
   const viewAchievement = achievementSection.display;
   const viewBlog = blogSection.display;
+  const viewPublications = publicationInfo.display;
   const viewTalks = talkSection.display;
   const viewResume = resumeSection.display;
 
@@ -64,6 +66,11 @@ function Header() {
           {viewBlog && (
             <li>
               <a href="#blogs">Blogs</a>
+            </li>
+          )}
+          {viewPublications && (
+            <li>
+              <a href="#publications">Publications</a>
             </li>
           )}
           {viewTalks && (

@@ -139,7 +139,7 @@ const educationInfo = {
     },
     {
       schoolName: "Fluminense Federal University - UFF",
-      logo: require("./assets/images/UFF_brasão.png"),
+      logo: require("./assets/images/UFF_brasao.png"),
       subHeader: "Bachelor in Industrial Engineering",
       duration: "March 2008 - December 2012",
       // desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
