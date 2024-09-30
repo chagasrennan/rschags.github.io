@@ -27,4 +27,14 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Getting Started
 
-To get a local copy up and running, follow these simple step
+To get a local copy up and running:
+
+```
+npm start
+```
+
+To build and deploy to githubpages (gh-branch):
+
+```
+npm run deploy
+```

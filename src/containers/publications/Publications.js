@@ -6,9 +6,9 @@ import {publicationInfo} from "../../portfolio";
 export default function Publication() {
   if (publicationInfo.display) {
     return (
-      <div className="education-section" id="education">
-        <h1 className="education-heading">Publications</h1>
-        <div className="education-card-container">
+      <div className="publication-section" id="publications">
+        <h1 className="publication-heading">Publications</h1>
+        <div className="publication-card-container">
           {publicationInfo.schools.map((school, index) => (
             <PublicationCard key={index} school={school} 
             />
