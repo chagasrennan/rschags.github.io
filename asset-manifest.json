@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.fcd963ef.css",
-    "main.js": "/static/js/main.8a646bb8.js",
+    "main.js": "/static/js/main.2411e19b.js",
     "static/css/64.bba8fa55.chunk.css": "/static/css/64.bba8fa55.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/static/js/64.56dc6704.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/static/css/769.b3cbb36b.chunk.css",
@@ -16,7 +16,6 @@
     "static/media/UFF_brasao.png": "/static/media/UFF_brasao.c59f51d86e0bbe46d123.png",
     "static/media/cirrelt_logo.png": "/static/media/cirrelt_logo.d1e26064d127ecd0a4c8.png",
     "static/media/obf.webp": "/static/media/obf.b80c5078ddfc271da021.webp",
-    "static/media/contactMailDark.svg": "/static/media/contactMailDark.1db650d351729a0f17b4e3104e6a7b7a.svg",
     "static/media/developerActivity.svg": "/static/media/developerActivity.2c0445cae86f4243433a2f5a22b2c031.svg",
     "static/media/conference.png": "/static/media/conference.b92c5a946746acdd230a.png",
     "static/media/academic.png": "/static/media/academic.fd7fc9ce7c22ecc3408e.png",
@@ -30,7 +29,7 @@
     "index.html": "/index.html",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.fcd963ef.css.map": "/static/css/main.fcd963ef.css.map",
-    "main.8a646bb8.js.map": "/static/js/main.8a646bb8.js.map",
+    "main.2411e19b.js.map": "/static/js/main.2411e19b.js.map",
     "64.bba8fa55.chunk.css.map": "/static/css/64.bba8fa55.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/static/js/64.56dc6704.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/static/css/769.b3cbb36b.chunk.css.map",
@@ -38,6 +37,6 @@
   },
   "entrypoints": [
     "static/css/main.fcd963ef.css",
-    "static/js/main.8a646bb8.js"
+    "static/js/main.2411e19b.js"
   ]
 }
