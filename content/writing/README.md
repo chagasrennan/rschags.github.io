@@ -101,6 +101,37 @@ To update these publications:
 3. Update publication dates or versions in the catalog when appropriate, then
    regenerate PDFs and rerun the checks.
 
+## Social sharing previews
+
+Set `socialImage` inside a translation to choose the image used when its URL is
+shared on WhatsApp and other platforms. The image affects sharing metadata;
+homepage cards and the browser-tab icon are unchanged. Example:
+
+```json
+"socialImage": {
+  "source": "my-post/share-pt.png",
+  "alt": "My post title — Rennan Chagas",
+  "width": 1200,
+  "height": 630
+}
+```
+
+Paths are relative to `content/writing`. PNG, JPEG and WebP are supported.
+The build copies the image and writes absolute Open Graph and Twitter image URLs
+in the generated HTML. A publication-level `socialImage` can supply a shared
+fallback for its translations. Use a new filename when replacing a preview
+image, since social platforms can cache the old URL.
+
+To export title covers from the catalog with the site's font:
+
+```sh
+node scripts/export-social-images.js
+npm run writing:build
+```
+
+The export requires Chrome and updates each translation's `socialImage` with a
+content-based filename. These cover images are tracked in Git.
+
 ## PDF exports
 
 The white papers have tracked English and Portuguese PDFs. Their `pdf` fields

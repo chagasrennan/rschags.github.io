@@ -116,6 +116,57 @@ async function main() {
     assert.equal(document.querySelectorAll("h1").length, 1);
     checkLinks(document, route);
     if (item) {
+      const image = item.socialImage || publication.socialImage;
+      if (image) {
+        const url = `https://rchags.dev/writing/assets/${image.source}`;
+        assert.equal(
+          document.querySelectorAll('meta[property="og:image"]').length,
+          1
+        );
+        assert.equal(
+          document.querySelector('meta[property="og:image"]').content,
+          url
+        );
+        assert.equal(
+          document.querySelector('meta[name="twitter:image"]').content,
+          url
+        );
+        assert.equal(
+          document.querySelector('meta[name="twitter:card"]').content,
+          "summary_large_image"
+        );
+        assert.equal(
+          document.querySelector('meta[property="og:image:alt"]').content,
+          image.alt
+        );
+        assert.equal(
+          document.querySelector('meta[property="og:image:width"]').content,
+          String(image.width)
+        );
+        assert.equal(
+          document.querySelector('meta[property="og:image:height"]').content,
+          String(image.height)
+        );
+        assert.equal(
+          document.querySelector('link[rel="icon"]').getAttribute("href"),
+          "/favicon.ico"
+        );
+        const publishedImage = fs.readFileSync(
+          path.join(ROOT_DIR, "writing/assets", image.source)
+        );
+        assert(
+          publishedImage.equals(fs.readFileSync(contentFile(image.source))),
+          `${route}: social image differs from source`
+        );
+        if (image.source.endsWith(".png")) {
+          assert.equal(
+            publishedImage.subarray(0, 8).toString("hex"),
+            "89504e470d0a1a0a"
+          );
+          assert.equal(publishedImage.readUInt32BE(16), image.width);
+          assert.equal(publishedImage.readUInt32BE(20), image.height);
+        }
+      }
       for (const [otherLang, other] of Object.entries(
         publication.translations
       )) {

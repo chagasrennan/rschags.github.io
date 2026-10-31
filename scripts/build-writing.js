@@ -67,6 +67,21 @@ function loadPublications({includePDFs = true} = {}) {
         throw new Error(`Invalid or duplicate publication route: ${item.path}`);
       }
       routes.add(item.path);
+      const image = item.socialImage || publication.socialImage;
+      if (image) {
+        if (
+          !image.source ||
+          !/\.(png|jpe?g|webp)$/i.test(image.source) ||
+          !fs.existsSync(contentFile(image.source)) ||
+          !image.alt ||
+          !Number.isInteger(image.width) ||
+          image.width <= 0 ||
+          !Number.isInteger(image.height) ||
+          image.height <= 0
+        ) {
+          throw new Error(`Invalid social image: ${publication.id}/${lang}`);
+        }
+      }
       if (
         !item.title ||
         !item.summary ||
@@ -218,8 +233,37 @@ function metadata(document, publication, lang) {
   setMeta(document, "og:url", url, true);
   setMeta(document, "og:type", "article", true);
   setMeta(document, "og:locale", lang === "pt" ? "pt_BR" : "en_US", true);
-  setMeta(document, "og:image", `${ORIGIN}/android-chrome-384x384.png`, true);
-  setMeta(document, "twitter:card", "summary");
+  const image = item.socialImage || publication.socialImage;
+  const imageURL = image
+    ? `${ORIGIN}/writing/assets/${image.source}`
+    : `${ORIGIN}/android-chrome-384x384.png`;
+  // Replace inherited image tags so crawlers receive one unambiguous preview.
+  document
+    .querySelectorAll(
+      'meta[property^="og:image"], meta[name="twitter:image"], meta[name="twitter:image:alt"]'
+    )
+    .forEach(el => el.remove());
+  setMeta(document, "og:image", imageURL, true);
+  setMeta(document, "og:image:secure_url", imageURL, true);
+  setMeta(document, "og:image:width", image ? image.width : 384, true);
+  setMeta(document, "og:image:height", image ? image.height : 384, true);
+  setMeta(document, "og:image:alt", image ? image.alt : "Rennan Chagas", true);
+  setMeta(
+    document,
+    "og:image:type",
+    image
+      ? {
+          ".png": "image/png",
+          ".jpg": "image/jpeg",
+          ".jpeg": "image/jpeg",
+          ".webp": "image/webp"
+        }[path.extname(image.source).toLowerCase()]
+      : "image/png",
+    true
+  );
+  setMeta(document, "twitter:card", image ? "summary_large_image" : "summary");
+  setMeta(document, "twitter:image", imageURL);
+  setMeta(document, "twitter:image:alt", image ? image.alt : "Rennan Chagas");
   setMeta(document, "twitter:title", item.title);
   setMeta(document, "twitter:description", item.summary);
   setMeta(
@@ -476,6 +520,12 @@ async function build({includePDFs = true} = {}) {
       write(`assets/${asset}`, fs.readFileSync(contentFile(asset)));
     }
     for (const [lang, item] of Object.entries(publication.translations)) {
+      const image = item.socialImage || publication.socialImage;
+      if (image)
+        write(
+          `assets/${image.source}`,
+          fs.readFileSync(contentFile(image.source))
+        );
       write(
         `${item.path.slice("/writing/".length)}index.html`,
         await renderArticle(publication, lang, publications, includePDFs)

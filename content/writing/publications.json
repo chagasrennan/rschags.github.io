@@ -10,14 +10,26 @@
         "summary": "Brazil’s 2026 runoff, one ballot box at a time. An interactive introduction to estimating vote transfers—and the limits of what aggregate data can tell us.",
         "path": "/writing/brazil-2026-vote-transfers/",
         "source": "brazil-2026-vote-transfers/blog-en.html",
-        "readTime": "9 min read"
+        "readTime": "9 min read",
+        "socialImage": {
+          "source": "brazil-2026-vote-transfers/social-post-en-74f612940645.png",
+          "alt": "Where did the votes go? — Rennan Chagas",
+          "width": 1200,
+          "height": 630
+        }
       },
       "pt": {
         "title": "Para onde foram os votos?",
         "summary": "O segundo turno de 2026, urna por urna. Uma introdução interativa às estimativas de transferência de votos e aos limites dos dados agregados.",
         "path": "/writing/brazil-2026-vote-transfers/pt/",
         "source": "brazil-2026-vote-transfers/blog-pt.html",
-        "readTime": "9 min de leitura"
+        "readTime": "9 min de leitura",
+        "socialImage": {
+          "source": "brazil-2026-vote-transfers/social-post-pt-2a363e31183a.png",
+          "alt": "Para onde foram os votos? — Rennan Chagas",
+          "width": 1200,
+          "height": 630
+        }
       }
     }
   },
@@ -33,14 +45,26 @@
         "summary": "A working paper on estimating Brazilian vote transfers: data, methods, interactive results, validation, uncertainty, and limitations.",
         "path": "/writing/brazil-2026-vote-transfers/whitepaper/",
         "source": "brazil-2026-vote-transfers/whitepaper-en.html",
-        "pdf": "brazil-2026-vote-transfers/whitepaper-en.pdf"
+        "pdf": "brazil-2026-vote-transfers/whitepaper-en.pdf",
+        "socialImage": {
+          "source": "brazil-2026-vote-transfers/social-whitepaper-en-253fe016c618.png",
+          "alt": "Between the Rounds — Rennan Chagas",
+          "width": 1200,
+          "height": 630
+        }
       },
       "pt": {
         "title": "Entre os turnos",
         "summary": "Um documento de trabalho sobre estimativas de transferência de votos: dados, métodos, resultados interativos, validação, incerteza e limitações.",
         "path": "/writing/brazil-2026-vote-transfers/whitepaper/pt/",
         "source": "brazil-2026-vote-transfers/whitepaper-pt.html",
-        "pdf": "brazil-2026-vote-transfers/whitepaper-pt.pdf"
+        "pdf": "brazil-2026-vote-transfers/whitepaper-pt.pdf",
+        "socialImage": {
+          "source": "brazil-2026-vote-transfers/social-whitepaper-pt-2c9a0ba0300b.png",
+          "alt": "Entre os turnos — Rennan Chagas",
+          "width": 1200,
+          "height": 630
+        }
       }
     }
   }
