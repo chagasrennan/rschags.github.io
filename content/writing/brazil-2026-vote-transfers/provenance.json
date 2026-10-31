@@ -3,23 +3,23 @@
   "importedAt": "2026-10-30",
   "sourceDirectory": "site/",
   "datasetMatchesResearchReport": true,
-  "researchResultsSha256": "451d9c7f44272b40ac30031ccad50c8575506e2d7300aa483e7e8473a947e6ac",
+  "researchResultsSha256": "86bbfe2809eedb436cbfbf6bc45312cd1d6082fb9c7d8943d8c39da9c26e6dcf",
   "files": [
     {
       "file": "blog-en.html",
-      "sha256": "828a9c2e4bdc78ddf38707e02cc0212d21dda26744242062d30c634582a0f20e"
+      "sha256": "74a49f5850902d95d052899477dad2b14cd39dd25dde6f60f2469107023982e7"
     },
     {
       "file": "blog-pt.html",
-      "sha256": "b2accbf75934da0a17e24ec859a7c5cbd5fc54fd75f493eeab50cdcc05b015da"
+      "sha256": "ba2f4c01ea7d408615e7b05fac101ba5100e20d14fdc66b9ca5734bb06a7cf22"
     },
     {
       "file": "whitepaper-en.html",
-      "sha256": "2c7e58a8f854b3418816cb797f111a8dbc86edb78a636c8e86edba6dfab22352"
+      "sha256": "0f3f7318a6ee6850d6433daa982fc9fe84624f6af6853f4e903ce010b95fd691"
     },
     {
       "file": "whitepaper-pt.html",
-      "sha256": "c1f07820932b8dd48379742002f8ce8cfe2dc9176db89fde7711b0d1599654bb"
+      "sha256": "05af93bced07613ec25166e9ed31be97c4b6bf60111de9bc2ee60cad80650683"
     }
   ],
   "referenceUpdates": [
@@ -31,5 +31,6 @@
       "access": "User-provided full article PDF verified and consulted alongside the official supplement.",
       "scope": "Citation and source-access correction; estimated results and embedded chart data unchanged."
     }
-  ]
+  ],
+  "sourceDataSha256": "2ac63b972086ccfb1a230b9048257a3e0d9a83fe4ec4f1535f31809bc71cba12"
 }
