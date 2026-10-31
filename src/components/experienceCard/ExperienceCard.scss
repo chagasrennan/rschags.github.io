@@ -72,9 +72,7 @@
   font-size: 25px;
   text-align: center;
   font-weight: 700;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .experience-roundedimg {
@@ -92,13 +90,17 @@
 }
 
 .experience-text-role {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.4em;
   text-align: center;
   color: $textColor;
   font-weight: 700;
   font-size: 25px;
   margin: 0px;
   padding-top: 1.5rem;
-  line-height: normal;
+  line-height: 1.2;
 }
 .dark-mode-text {
   color: $textColorDark !important;
@@ -113,12 +115,102 @@
 }
 
 .experience-text-desc {
-  text-align: center;
+  text-align: left;
 }
 
 .experience-text-details {
   padding: 1.5rem;
   margin-top: 2rem;
+}
+
+.experience-logo-contain {
+  object-fit: contain;
+  background: $lightBackground1;
+  padding: 0.75rem;
+  box-sizing: border-box;
+}
+
+.experience-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  margin: 1rem auto 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  color: $subTitle;
+  border-radius: 50%;
+
+  &:hover {
+    color: $buttonColor;
+    background: $lightBackground3;
+  }
+
+  &:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 4px;
+  }
+  svg {
+    transition: transform 160ms ease;
+  }
+
+  &[aria-expanded="true"] svg {
+    transform: rotate(180deg);
+  }
+}
+
+.experience-card-dark .experience-toggle {
+  color: $textColorDark;
+
+  &:hover {
+    color: $skillsColor;
+    background: $darkBackground;
+  }
+}
+
+.experience-expanded-details {
+  grid-column: 1 / -1;
+  min-width: 0;
+  padding: 1.5rem 2rem;
+  border: 1px solid $lightBorder1;
+  border-radius: 10px;
+  background: $lightBackground2;
+  color: $cardSubtitle;
+  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+
+  &.dark-mode-text {
+    background: $darkBackground;
+  }
+
+  h2 {
+    margin: 0 0 1rem;
+    color: $textColor;
+    font-size: 22px;
+    line-height: 1.4;
+  }
+
+  &.dark-mode-text h2 {
+    color: $textColorDark;
+  }
+
+  ul {
+    padding-left: 1.25rem;
+  }
+
+  li + li {
+    margin-top: 0.75rem;
+  }
+}
+
+.experience-core-areas {
+  border-top: 1px solid $lightBorder1;
+  padding-top: 1rem;
+  line-height: 1.7;
 }
 
 /* Media Query */
@@ -141,6 +233,10 @@
 }
 
 @media (max-width: 768px) {
+  .experience-expanded-details {
+    padding: 1.25rem;
+  }
+
   .experience-text-role {
     font-size: 22px;
   }

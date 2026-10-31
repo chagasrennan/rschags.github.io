@@ -1,0 +1,38 @@
+{
+  "metadata": {
+    "upload_type": "publication",
+    "publication_type": "workingpaper",
+    "title": "Between the Rounds: Estimating how Brazilian voters moved from the first to the second round of the 2026 presidential election",
+    "creators": [
+      {
+        "name": "Chagas, Rennan"
+      }
+    ],
+    "publication_date": "2026-10-30",
+    "version": "1.0",
+    "language": "eng",
+    "description": "<p>This working paper presents an exploratory reconstruction of vote transfers between the two rounds of the 2026 Brazilian presidential election using ballot-box-level aggregate results and ecological inference.</p><p>It describes data matching, a Brown–Payne-style transition model, reconciliation through iterative proportional fitting, registration-movement sensitivity analyses, bootstrap uncertainty, simulation-based validation, and comparisons with opinion polls. It emphasizes ecological bias, the limitations of model-based uncertainty, and the distinction between estimated aggregate transitions and observed individual behavior.</p><p>This record contains English and Portuguese PDF editions of version 1.0. Interactive figures and the complete reading experience are available on the author’s website.</p>",
+    "keywords": [
+      "Ecological inference",
+      "Vote transfers",
+      "Brazil",
+      "2026 presidential election",
+      "Electoral behavior",
+      "Statistical modeling"
+    ],
+    "access_right": "open",
+    "related_identifiers": [
+      {
+        "identifier": "https://rchags.dev/writing/brazil-2026-vote-transfers/whitepaper/",
+        "relation": "isIdenticalTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://rchags.dev/writing/brazil-2026-vote-transfers/whitepaper/pt/",
+        "relation": "isIdenticalTo",
+        "scheme": "url"
+      }
+    ],
+    "notes": "Exploratory working paper, not a peer-reviewed article. English and Portuguese editions are included in a single record. The reported uncertainty does not capture all uncertainty about modeling assumptions."
+  }
+}

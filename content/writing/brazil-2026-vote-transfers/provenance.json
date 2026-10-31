@@ -1,0 +1,35 @@
+{
+  "project": "brazil-2026-vote-transfers",
+  "importedAt": "2026-10-30",
+  "sourceDirectory": "site/",
+  "datasetMatchesResearchReport": true,
+  "researchResultsSha256": "451d9c7f44272b40ac30031ccad50c8575506e2d7300aa483e7e8473a947e6ac",
+  "files": [
+    {
+      "file": "blog-en.html",
+      "sha256": "828a9c2e4bdc78ddf38707e02cc0212d21dda26744242062d30c634582a0f20e"
+    },
+    {
+      "file": "blog-pt.html",
+      "sha256": "b2accbf75934da0a17e24ec859a7c5cbd5fc54fd75f493eeab50cdcc05b015da"
+    },
+    {
+      "file": "whitepaper-en.html",
+      "sha256": "2c7e58a8f854b3418816cb797f111a8dbc86edb78a636c8e86edba6dfab22352"
+    },
+    {
+      "file": "whitepaper-pt.html",
+      "sha256": "c1f07820932b8dd48379742002f8ce8cfe2dc9176db89fde7711b0d1599654bb"
+    }
+  ],
+  "referenceUpdates": [
+    {
+      "doi": "10.1080/2330443X.2026.2654396",
+      "title": "Estimating Vote Transition Counts in Ecological Inference",
+      "sourceFile": "literature/Forcina_Pavia_2026.pdf",
+      "sha256": "d79b5f175b3409adec306332ef27961828a25bf8bac9226e9e1eb8ab91da2421",
+      "access": "User-provided full article PDF verified and consulted alongside the official supplement.",
+      "scope": "Citation and source-access correction; estimated results and embedded chart data unchanged."
+    }
+  ]
+}

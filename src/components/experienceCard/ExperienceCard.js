@@ -2,7 +2,13 @@ import React, {useState, createRef} from "react";
 import "./ExperienceCard.scss";
 import ColorThief from "colorthief";
 
-export default function ExperienceCard({cardInfo, isDark}) {
+export default function ExperienceCard({
+  cardInfo,
+  isDark,
+  isExpanded,
+  onToggle,
+  detailsId
+}) {
   const [colorArrays, setColorArrays] = useState([]);
   const imgRef = createRef();
 
@@ -17,19 +23,6 @@ export default function ExperienceCard({cardInfo, isDark}) {
       : "rgb(" + values.join(", ") + ")";
   }
 
-  const GetDescBullets = ({descBullets, isDark}) => {
-    return descBullets
-      ? descBullets.map((item, i) => (
-          <li
-            key={i}
-            className={isDark ? "subTitle dark-mode-text" : "subTitle"}
-          >
-            {item}
-          </li>
-        ))
-      : null;
-  };
-
   return (
     <div className={isDark ? "experience-card-dark" : "experience-card"}>
       <div style={{background: rgb(colorArrays)}} className="experience-banner">
@@ -41,7 +34,9 @@ export default function ExperienceCard({cardInfo, isDark}) {
         <img
           crossOrigin={"anonymous"}
           ref={imgRef}
-          className="experience-roundedimg"
+          className={`experience-roundedimg${
+            cardInfo.logoFit === "contain" ? " experience-logo-contain" : ""
+          }`}
           src={cardInfo.companylogo}
           alt={cardInfo.company}
           onLoad={() => getColorArrays()}
@@ -66,19 +61,63 @@ export default function ExperienceCard({cardInfo, isDark}) {
         >
           {cardInfo.date}
         </h5>
-        <p
-          className={
-            isDark
-              ? "subTitle experience-text-desc dark-mode-text"
-              : "subTitle experience-text-desc"
-          }
+        <button
+          type="button"
+          className="experience-toggle"
+          aria-label={`${isExpanded ? "Hide" : "Show"} experience details at ${
+            cardInfo.company
+          }`}
+          aria-expanded={isExpanded}
+          aria-controls={isExpanded ? detailsId : undefined}
+          onClick={onToggle}
+          title="Experience details"
         >
-          {cardInfo.desc}
-        </p>
-        <ul>
-          <GetDescBullets descBullets={cardInfo.descBullets} isDark={isDark} />
-        </ul>
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+          >
+            <path d="m6 9 6 6 6-6" />
+          </svg>
+        </button>
       </div>
     </div>
+  );
+}
+
+export function ExperienceDetails({cardInfo, isDark, id, row}) {
+  return (
+    <section
+      id={id}
+      className={`experience-expanded-details${
+        isDark ? " dark-mode-text" : ""
+      }`}
+      style={{gridRow: row}}
+      aria-labelledby={`${id}-title`}
+    >
+      <h2 id={`${id}-title`}>
+        {cardInfo.company} · {cardInfo.role}
+      </h2>
+      {cardInfo.employmentType && <p>{cardInfo.employmentType}</p>}
+      <p className="experience-text-desc">{cardInfo.desc}</p>
+      {cardInfo.descBullets && (
+        <ul>
+          {cardInfo.descBullets.map((item, i) => (
+            <li key={i}>{item}</li>
+          ))}
+        </ul>
+      )}
+      {cardInfo.coreAreas && (
+        <p className="experience-core-areas">
+          <strong>Core areas:</strong> {cardInfo.coreAreas}
+        </p>
+      )}
+    </section>
   );
 }

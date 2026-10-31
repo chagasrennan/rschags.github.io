@@ -1,0 +1,47 @@
+[
+  {
+    "id": "brazil-2026-vote-transfers",
+    "type": "post",
+    "date": "2026-10-30",
+    "tags": ["Ecological inference", "Data science", "Brazil"],
+    "translations": {
+      "en": {
+        "title": "Where did the votes go?",
+        "summary": "Brazil’s 2026 runoff, one ballot box at a time. An interactive introduction to estimating vote transfers—and the limits of what aggregate data can tell us.",
+        "path": "/writing/brazil-2026-vote-transfers/",
+        "source": "brazil-2026-vote-transfers/blog-en.html",
+        "readTime": "9 min read"
+      },
+      "pt": {
+        "title": "Para onde foram os votos?",
+        "summary": "O segundo turno de 2026, urna por urna. Uma introdução interativa às estimativas de transferência de votos e aos limites dos dados agregados.",
+        "path": "/writing/brazil-2026-vote-transfers/pt/",
+        "source": "brazil-2026-vote-transfers/blog-pt.html",
+        "readTime": "9 min de leitura"
+      }
+    }
+  },
+  {
+    "id": "brazil-2026-vote-transfers-whitepaper",
+    "type": "whitepaper",
+    "date": "2026-10-30",
+    "version": "1.0",
+    "tags": ["Ecological inference", "Research methods", "Brazil"],
+    "translations": {
+      "en": {
+        "title": "Between the Rounds",
+        "summary": "A working paper on estimating Brazilian vote transfers: data, methods, interactive results, validation, uncertainty, and limitations.",
+        "path": "/writing/brazil-2026-vote-transfers/whitepaper/",
+        "source": "brazil-2026-vote-transfers/whitepaper-en.html",
+        "pdf": "brazil-2026-vote-transfers/whitepaper-en.pdf"
+      },
+      "pt": {
+        "title": "Entre os turnos",
+        "summary": "Um documento de trabalho sobre estimativas de transferência de votos: dados, métodos, resultados interativos, validação, incerteza e limitações.",
+        "path": "/writing/brazil-2026-vote-transfers/whitepaper/pt/",
+        "source": "brazil-2026-vote-transfers/whitepaper-pt.html",
+        "pdf": "brazil-2026-vote-transfers/whitepaper-pt.pdf"
+      }
+    }
+  }
+]

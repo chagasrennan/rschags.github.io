@@ -1,4 +1,7 @@
 src/serviceWorker.js
 package-lock.json
 src/assets/lottie
+content/writing/**/*.html
+public/writing
+src/generated
 

@@ -16,6 +16,11 @@ I built this website using a public React template from [developer-portfolio](ht
 - **Projects Showcase**: A section dedicated to showcasing my projects with descriptions and links.
 - **Skills Section**: A detailed list of my technical skills.
 - **Contact Form**: A simple contact form to get in touch with me.
+- **Writing**: Blog posts and white papers with dedicated reading pages,
+  English/Portuguese editions, interactive charts, and downloadable PDFs.
+
+See [the publishing guide](content/writing/README.md) to add a post, update a
+publication, preview the site, or regenerate PDFs.
 
 ## License
 

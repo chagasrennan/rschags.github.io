@@ -1,5 +1,5 @@
 {
-  "homepage": "http://rchags.dev/",
+  "homepage": "https://rchags.dev/",
   "name": "developerfolio",
   "version": "0.1.0",
   "private": true,
@@ -22,6 +22,12 @@
     "sass": "^1.32.8"
   },
   "scripts": {
+    "prestart": "npm run writing:build",
+    "prebuild": "npm run writing:build",
+    "pretest": "npm run writing:build",
+    "writing:build": "node scripts/build-writing.js",
+    "writing:pdf": "node scripts/export-writing-pdfs.js",
+    "writing:check": "node scripts/check-writing.js",
     "predeploy": "npm run build",
     "start": "node fetch.js && react-scripts start",
     "build": "node fetch.js && react-scripts build",
@@ -54,6 +60,9 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "dotenv": "^8.6.0",
-    "prettier": "^2.3.1"
+    "prettier": "^2.3.1",
+    "jsdom": "16.7.0",
+    "marked": "15.0.12",
+    "playwright": "1.56.1"
   }
 }

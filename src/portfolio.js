@@ -4,6 +4,7 @@
 
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import petzLogo from "./assets/images/petz_logo.svg";
 
 // Splash Screen
 
@@ -179,10 +180,28 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
+      role: "Data Science Manager",
+      company: "Petz (now Petz–Cobasi)",
+      companylogo: petzLogo,
+      logoFit: "contain",
+      date: "Dec 2024 – Sep 2025",
+      employmentType: "Contractor",
+      desc: "Led hands-on Data Science initiatives across retail, supply chain, operations, e-commerce and customer analytics at one of Brazil’s leading pet retailers. Partnered with business stakeholders to identify and prioritize opportunities, structure projects, mentor Data Scientists and translate models and technical trade-offs into operational decisions during the Petz–Cobasi merger process.",
+      descBullets: [
+        "Demand Forecasting & Inventory Optimization — Redesigned SKU-level forecasting and safety stock using demand patterns, seasonality, service-level targets and supplier lead-time uncertainty. Identified multi-million-real opportunities to reduce inventory while preserving product availability.",
+        "Supply Chain & Network Optimization — Developed stochastic analyses of inventory consolidation and risk pooling, including studies supporting Petz–Cobasi integration planning and evaluating network trade-offs in inventory, cost, risk and responsiveness.",
+        "Operations Research & Workforce Planning — Built optimization models that translate forecasted workload into staffing schedules while respecting capacity, shift and labor constraints.",
+        "Search & Recommendation — Developed semantic product search, retrieval and reranking, recommendation models and commercial ranking strategies for e-commerce.",
+        "Customer Science — Applied segmentation, RFM, repurchase analysis, LTV, cohorts and experimentation to support personalization, retention and commercial decisions.",
+        "Data Science Platform — Helped evolve analytical workloads across Databricks, Snowflake and Snowpark, building reusable datasets and APIs with attention to performance, integration and cloud cost."
+      ],
+      coreAreas: "Data Science Leadership · Operations Research · Supply Chain Analytics · Demand Forecasting · Inventory Optimization · Machine Learning · Recommender Systems · Customer Analytics · Snowflake · Python · SQL"
+    },
+    {
       role: "Senior Data Scientist",
       company: "TechnipFMC",
       companylogo: require("./assets/images/technip_logo.png"),
-      date: "Mar 2022 – Present",
+      date: "Mar 2022 – Dec 2024",
       desc: "Member of global data science team responsible designing models and data process for business challenges such as:",
       descBullets: [
         "Automation and optimization of S&OP process",
@@ -435,25 +454,10 @@ const achievementSection = {
 // Blogs Section
 
 const blogSection = {
-  title: "Blogs",
+  title: "Writing",
   subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "false", // Set true to display fetched medium blogs instead of hardcoded ones
-  blogs: [
-    {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-      description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
-    },
-    {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
-      description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
-    }
-  ],
-  display: false // Set false to hide this section, defaults to true
+    "Thoughts and white papers on data science, optimization, and research.",
+  display: true
 };
 
 // Talks Sections
