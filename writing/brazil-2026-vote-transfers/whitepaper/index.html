@@ -221,7 +221,7 @@ footer.site{border-top:1px solid var(--line);margin-top:70px;padding:30px 0 60px
 <noscript><p class="wrap" style="font-family:sans-serif">The charts on this page need JavaScript. The text is readable without it.</p></noscript>
 
 <div class="paper">
-<nav class="toc" aria-label="On this page"><b>On this page</b><a href="#intro">1. Introduction</a><a href="#data">2. Data</a><a href="#method">3. Method, in plain language</a><a href="#results">4. Results</a><a href="#reliability">5. How reliable are these estimates?</a><a href="#limits">6. Limitations</a><a href="#repro">7. Reproducibility</a><a href="#glossary">8. Glossary</a><a href="#refs">9. References and sources</a></nav>
+<nav class="toc" aria-label="On this page"><b>On this page</b><a href="#intro">1. Introduction</a><a href="#data">2. Data</a><a href="#method">3. Method, in plain language</a><a href="#results">4. Results</a><a href="#reliability">5. How reliable are these estimates?</a><a href="#limits">6. Limitations</a><a href="#glossary">7. Glossary</a><a href="#refs">8. References and sources</a></nav>
 <div class="paper-main">
 <header class="hero" style="padding-top:44px"><p class="kicker">Whitepaper · Brazil 2026</p>
 <h1>Between the Rounds</h1>
@@ -374,17 +374,7 @@ footer.site{border-top:1px solid var(--line);margin-top:70px;padding:30px 0 60px
 <li><strong>Not peer reviewed.</strong> This is a working paper. Some of our pre-set accuracy and coverage goals were not met.</li>
 </ol>
 
-<h2 id="repro">7. Reproducibility</h2>
-<p>Everything is in the project repository: code, configuration, random seeds (seed 20261029 for the main fit), and file checksums for every input. The pipeline downloads the public TSE data, verifies each file, builds the matched dataset, fits the model, runs the validation experiments and writes the figures’ data. In outline:</p>
-<pre style="background:var(--soft);padding:12px 16px;border-radius:8px;overflow-x:auto;font-size:13.5px;line-height:1.6"><code>python3 -m venv .venv &amp;&amp; .venv/bin/python -m pip install -r requirements.lock.txt
-.venv/bin/python -m src.pipeline all          # baseline analysis
-.venv/bin/python -m src.population.pipeline   # extension used in this paper
-.venv/bin/python site_src/extract_data.py     # data behind these pages
-.venv/bin/python site_src/build.py            # build these pages
-.venv/bin/python -m pytest -q</code></pre>
-<p>These pages are self-contained: all data are embedded and nothing is loaded from the internet.</p>
-
-<h2 id="glossary">8. Glossary</h2>
+<h2 id="glossary">7. Glossary</h2>
 <dl class="glossary">
 <dt>Ballot box / section (<em>seção</em>)</dt><dd>The smallest unit for which results are published; about 300 voters.</dd>
 <dt>Blank / null vote</dt><dd>Voting for nobody (blank) or an invalid ballot (null). Neither counts as a vote for a candidate.</dd>
@@ -397,7 +387,7 @@ footer.site{border-top:1px solid var(--line);margin-top:70px;padding:30px 0 60px
 <dt>Iterative proportional fitting</dt><dd>A technique that adjusts a table until its rows and columns add up to given totals.</dd>
 </dl>
 
-<h2 id="refs">9. References and sources</h2>
+<h2 id="refs">8. References and sources</h2>
 <ol class="refs">
 <li>Brown, P. J., &amp; Payne, C. D. (1986). Aggregate data, ecological regression, and voting transitions. <em>Journal of the American Statistical Association</em>, 81(394), 452–460.</li>
 <li>Forcina, A., &amp; Pavía, J. M. (2026). Estimating Vote Transition Counts in Ecological Inference. <em>Statistics and Public Policy, 13</em>(1), Article 2654396. <a href="https://doi.org/10.1080/2330443X.2026.2654396">https://doi.org/10.1080/2330443X.2026.2654396</a>.</li>

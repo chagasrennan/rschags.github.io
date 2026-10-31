@@ -221,7 +221,7 @@ footer.site{border-top:1px solid var(--line);margin-top:70px;padding:30px 0 60px
 <noscript><p class="wrap" style="font-family:sans-serif">Os gráficos desta página precisam de JavaScript. O texto pode ser lido sem ele.</p></noscript>
 
 <div class="paper">
-<nav class="toc" aria-label="Nesta página"><b>Nesta página</b><a href="#intro">1. Introdução</a><a href="#data">2. Dados</a><a href="#method">3. Método, em linguagem simples</a><a href="#results">4. Resultados</a><a href="#reliability">5. Quão confiáveis são essas estimativas?</a><a href="#limits">6. Limitações</a><a href="#repro">7. Reprodutibilidade</a><a href="#glossary">8. Glossário</a><a href="#refs">9. Referências e fontes</a></nav>
+<nav class="toc" aria-label="Nesta página"><b>Nesta página</b><a href="#intro">1. Introdução</a><a href="#data">2. Dados</a><a href="#method">3. Método, em linguagem simples</a><a href="#results">4. Resultados</a><a href="#reliability">5. Quão confiáveis são essas estimativas?</a><a href="#limits">6. Limitações</a><a href="#glossary">7. Glossário</a><a href="#refs">8. Referências e fontes</a></nav>
 <div class="paper-main">
 <header class="hero" style="padding-top:44px"><p class="kicker">Whitepaper · Brasil 2026</p>
 <h1>Entre os turnos</h1>
@@ -374,17 +374,7 @@ footer.site{border-top:1px solid var(--line);margin-top:70px;padding:30px 0 60px
 <li><strong>Sem revisão por pares.</strong> Este é um documento de trabalho. Algumas das nossas metas de acurácia e cobertura, fixadas antes, não foram atingidas.</li>
 </ol>
 
-<h2 id="repro">7. Reprodutibilidade</h2>
-<p>Tudo está no repositório do projeto: código, configuração, sementes aleatórias (semente 20261029 no ajuste principal) e checksums de todos os arquivos de entrada. O pipeline baixa os dados públicos do TSE, verifica cada arquivo, monta a base pareada, ajusta o modelo, roda os experimentos de validação e grava os dados das figuras. Em resumo:</p>
-<pre style="background:var(--soft);padding:12px 16px;border-radius:8px;overflow-x:auto;font-size:13.5px;line-height:1.6"><code>python3 -m venv .venv &amp;&amp; .venv/bin/python -m pip install -r requirements.lock.txt
-.venv/bin/python -m src.pipeline all          # análise de base
-.venv/bin/python -m src.population.pipeline   # extensão usada neste texto
-.venv/bin/python site_src/extract_data.py     # dados por trás destas páginas
-.venv/bin/python site_src/build.py            # gera estas páginas
-.venv/bin/python -m pytest -q</code></pre>
-<p>Estas páginas são autocontidas: todos os dados estão embutidos e nada é carregado da internet.</p>
-
-<h2 id="glossary">8. Glossário</h2>
+<h2 id="glossary">7. Glossário</h2>
 <dl class="glossary">
 <dt>Seção eleitoral (urna)</dt><dd>A menor unidade para a qual há resultados publicados; cerca de 300 eleitores.</dd>
 <dt>Voto em branco / nulo</dt><dd>Votar em ninguém (branco) ou uma cédula inválida (nulo). Nenhum conta como voto em candidato.</dd>
@@ -397,7 +387,7 @@ footer.site{border-top:1px solid var(--line);margin-top:70px;padding:30px 0 60px
 <dt>Ajuste proporcional iterativo</dt><dd>Técnica que ajusta uma tabela até que suas linhas e colunas somem totais dados.</dd>
 </dl>
 
-<h2 id="refs">9. Referências e fontes</h2>
+<h2 id="refs">8. Referências e fontes</h2>
 <ol class="refs">
 <li>Brown, P. J., &amp; Payne, C. D. (1986). Aggregate data, ecological regression, and voting transitions. <em>Journal of the American Statistical Association</em>, 81(394), 452–460.</li>
 <li>Forcina, A., &amp; Pavía, J. M. (2026). Estimating Vote Transition Counts in Ecological Inference. <em>Statistics and Public Policy, 13</em>(1), Article 2654396. <a href="https://doi.org/10.1080/2330443X.2026.2654396">https://doi.org/10.1080/2330443X.2026.2654396</a>.</li>
