@@ -1,6 +1,6 @@
 {
   "project": "brazil-2026-vote-transfers",
-  "importedAt": "2026-10-30",
+  "importedAt": "2026-10-31",
   "sourceDirectory": "site/",
   "datasetMatchesResearchReport": true,
   "researchResultsSha256": "86bbfe2809eedb436cbfbf6bc45312cd1d6082fb9c7d8943d8c39da9c26e6dcf",
@@ -15,11 +15,11 @@
     },
     {
       "file": "whitepaper-en.html",
-      "sha256": "0f3f7318a6ee6850d6433daa982fc9fe84624f6af6853f4e903ce010b95fd691"
+      "sha256": "83d68f3e2694f23136c012a2b0b9910cf946177f814576ef7bf8699db0bbf6dd"
     },
     {
       "file": "whitepaper-pt.html",
-      "sha256": "05af93bced07613ec25166e9ed31be97c4b6bf60111de9bc2ee60cad80650683"
+      "sha256": "d98a7a95960058bf9684d73de46a19e17db257e74bacdb325cfffc8c5ff2df59"
     }
   ],
   "referenceUpdates": [

@@ -1,12 +1,12 @@
 [
   {
     "file": "whitepaper-en.pdf",
-    "bytes": 1058938,
-    "sha256": "e326f461674f4a3f4a743cc7f1d1525121fdf1af6f8d394d08c15be57648fc38"
+    "bytes": 1047075,
+    "sha256": "6a909d9db8edd892d7b341659196910a75bc86cd5d9786b9cfef2d33309703ed"
   },
   {
     "file": "whitepaper-pt.pdf",
-    "bytes": 1092053,
-    "sha256": "79f97171f40247ec06a3dac68af5921bd9f32d93f3f97dd74d728bd3d847884c"
+    "bytes": 1080113,
+    "sha256": "087f1b16ea9143d63800ed5da0682a69e35bf7639bc18422f09785397b54723b"
   }
 ]
