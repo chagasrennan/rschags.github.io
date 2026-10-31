@@ -7,6 +7,10 @@ const CONTENT = path.join(ROOT, "content/writing");
 const OUTPUT = path.join(ROOT, "public/writing");
 const ORIGIN = "https://rchags.dev";
 const LABELS = {post: "Blog post", whitepaper: "White paper"};
+// Same GA4 property as public/index.html, so writing pages report to one stream.
+const GA_ID = "G-J4KBEDEY3T";
+const GA_SNIPPET = `<script async src="https://www.googletagmanager.com/gtag/js?id=${GA_ID}"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}');</script>`;
 const escapeHTML = value =>
   String(value).replace(
     /[&<>"']/g,
@@ -125,6 +129,7 @@ function footer() {
 
 function shell({title, summary, route, body, lang = "en"}) {
   return `<!doctype html><html lang="${lang}"><head>
+    ${GA_SNIPPET}
     <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
     <title>${escapeHTML(title)} · Rennan Chagas</title>
     <meta name="description" content="${escapeHTML(summary)}">
@@ -206,9 +211,15 @@ function metadata(document, publication, lang) {
   document.title = `${item.title} · Rennan Chagas`;
   document
     .querySelectorAll(
-      'link[rel="canonical"], link[rel="alternate"][hreflang], script[type="application/ld+json"]'
+      'link[rel="canonical"], link[rel="alternate"][hreflang], script[type="application/ld+json"], script[src*="googletagmanager.com/gtag"]'
     )
     .forEach(el => el.remove());
+  for (const script of document.head.querySelectorAll("script:not([src])")) {
+    if (script.textContent.includes("gtag('config'")) script.remove();
+  }
+  const charset = document.head.querySelector("meta[charset]");
+  if (charset) charset.insertAdjacentHTML("afterend", GA_SNIPPET);
+  else document.head.insertAdjacentHTML("afterbegin", GA_SNIPPET);
   addLink(document, {rel: "canonical", href: url});
   addLink(document, {rel: "icon", href: "/favicon.ico"});
   for (const [translationLang, translation] of Object.entries(
