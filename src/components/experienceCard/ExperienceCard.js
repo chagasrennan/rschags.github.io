@@ -13,6 +13,7 @@ export default function ExperienceCard({
   const imgRef = createRef();
 
   function getColorArrays() {
+    if (cardInfo.bannerColor) return;
     const colorThief = new ColorThief();
     setColorArrays(colorThief.getColor(imgRef.current));
   }
@@ -25,8 +26,14 @@ export default function ExperienceCard({
 
   return (
     <div className={isDark ? "experience-card-dark" : "experience-card"}>
-      <div style={{background: rgb(colorArrays)}} className="experience-banner">
-        <div className="experience-blurred_div"></div>
+      <div
+        style={{background: cardInfo.bannerColor || rgb(colorArrays)}}
+        className="experience-banner"
+      >
+        <div
+          className="experience-blurred_div"
+          style={cardInfo.bannerColor ? {background: "none"} : undefined}
+        ></div>
         <div className="experience-div-company">
           <h5 className="experience-text-company">{cardInfo.company}</h5>
         </div>
@@ -102,7 +109,7 @@ export function ExperienceDetails({cardInfo, isDark, id, row}) {
       aria-labelledby={`${id}-title`}
     >
       <h2 id={`${id}-title`}>
-        {cardInfo.company} · {cardInfo.role}
+        {cardInfo.expandedCompany || cardInfo.company} · {cardInfo.role}
       </h2>
       {cardInfo.employmentType && <p>{cardInfo.employmentType}</p>}
       <p className="experience-text-desc">{cardInfo.desc}</p>

@@ -145,6 +145,14 @@
   .publication-card {
     text-align: center;
   }
+  .publication-text-desc {
+    box-sizing: border-box;
+    max-width: 100%;
+    min-height: 2em;
+    height: auto;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
   .publication-card-right {
     max-width: 100%;
   }

@@ -5,6 +5,7 @@
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
 import petzLogo from "./assets/images/petz_logo.svg";
+import kplerLogo from "./assets/images/kpler_logo.svg";
 
 // Splash Screen
 
@@ -180,8 +181,27 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
+      role: "Senior Engineer - Operations Research",
+      company: "Kpler",
+      companylogo: kplerLogo,
+      logoFit: "contain",
+      bannerColor: "#FE5349",
+      date: "Sep 2025 – Present",
+      desc: "I develop optimization models and production software for Kpler’s Refineries product, turning refinery operations, crude logistics, and market data into forecasts of refinery runs and product output. My work spans mathematical modeling, algorithm design, implementation, data pipelines, validation, and deployment.",
+      descBullets: [
+        "Delivered complex LP/MILP optimization models, owning mathematical formulation, data integration, testing, and production deployment across three interconnected codebases.",
+        "Contributed to pipeline improvements that cut processing time from over five days to under six hours—more than 20× faster—through Apache Iceberg adoption, SQL optimization, and architecture reviews.",
+        "Expanded ownership into data engineering and database design, building Airflow workflows, schema migrations, dependency tracking, and automated monitoring with Python, SQL, PostgreSQL, and AWS.",
+        "Analyzed 2.5 million historical optimization cases, building reproducible evaluation workflows and translating findings into actionable recommendations on model quality and computational trade-offs.",
+        "Modernized solver infrastructure with OR-Tools MathOpt/SCIP and strengthened engineering quality through code reviews, regression testing, and safer database deployments.",
+        "Validated 1,900+ production configurations during a major rollout, confirming correct model-parameter application with zero unexplained discrepancies.",
+        "Partnered with engineers, analysts, and product managers to turn ambiguous requirements into deliverable solutions. Presented complex models and technical trade-offs through clear presentations, visualizations, and documentation, keeping stakeholders aligned as requirements evolved."
+      ]
+    },
+    {
       role: "Data Science Manager",
-      company: "Petz (now Petz–Cobasi)",
+      company: "Petz",
+      expandedCompany: "Petz (now Petz–Cobasi)",
       companylogo: petzLogo,
       logoFit: "contain",
       date: "Dec 2024 – Sep 2025",
