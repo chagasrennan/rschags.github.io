@@ -28,6 +28,7 @@
     "writing:build": "node scripts/build-writing.js",
     "writing:pdf": "node scripts/export-writing-pdfs.js",
     "writing:check": "node scripts/check-writing.js",
+    "resume:pdf": "node scripts/export-resume-pdf.js",
     "predeploy": "npm run build",
     "start": "node fetch.js && react-scripts start",
     "build": "node fetch.js && react-scripts build",

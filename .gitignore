@@ -30,3 +30,6 @@ public/blogs.json
 /public/writing
 /src/generated
 /public/sitemap.xml
+
+# Local, job-specific resume drafts and review notes.
+/resume-notes/

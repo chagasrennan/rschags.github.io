@@ -34,8 +34,7 @@ const greeting = {
   subTitle: emoji(
     `I am a ${myage} years old Brazilian with PhD in Industrial Engineering & OR. For ${totalxp} years I've been responsible for providing optimization and analytics solutions in different fields such as manufacturing, logistics, marketing science, software development, and consulting.`
   ),
-  resumeLink:
-    "https://drive.google.com/file/d/17ylDJ0VQmW2Ep32ZvoLaPLeQ0PlzIdSh/view?usp=sharing", // Set to empty to hide the button
+  resumeLink: "/resume/?download=1", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
