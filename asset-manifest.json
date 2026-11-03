@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.762a8ac2.css",
-    "main.js": "/static/js/main.1e5c9a54.js",
+    "main.css": "/static/css/main.ef3824c7.css",
+    "main.js": "/static/js/main.cf5fad9c.js",
     "static/css/64.bba8fa55.chunk.css": "/static/css/64.bba8fa55.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/static/js/64.56dc6704.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/static/css/769.b3cbb36b.chunk.css",
-    "static/js/769.5eade587.chunk.js": "/static/js/769.5eade587.chunk.js",
+    "static/js/769.aff3ab6d.chunk.js": "/static/js/769.aff3ab6d.chunk.js",
     "static/media/VictorMonoNerdFontPropo-Regular.ttf": "/static/media/VictorMonoNerdFontPropo-Regular.48383b9cf696b265c86d.ttf",
     "static/media/Caveat-VariableFont_wght.ttf": "/static/media/Caveat-VariableFont_wght.31f0a02d84d42627c894.ttf",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
@@ -28,16 +28,17 @@
     "static/media/saayaHealthLogo.webp": "/static/media/saayaHealthLogo.60b27d1f184fadfce43a.webp",
     "static/media/nextuLogo.webp": "/static/media/nextuLogo.e033dbfa4c58c0a906aa.webp",
     "index.html": "/index.html",
+    "static/media/kpler_logo.svg": "/static/media/kpler_logo.ee3ac68c16d38477867feda43d3b54d6.svg",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "main.762a8ac2.css.map": "/static/css/main.762a8ac2.css.map",
-    "main.1e5c9a54.js.map": "/static/js/main.1e5c9a54.js.map",
+    "main.ef3824c7.css.map": "/static/css/main.ef3824c7.css.map",
+    "main.cf5fad9c.js.map": "/static/js/main.cf5fad9c.js.map",
     "64.bba8fa55.chunk.css.map": "/static/css/64.bba8fa55.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/static/js/64.56dc6704.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/static/css/769.b3cbb36b.chunk.css.map",
-    "769.5eade587.chunk.js.map": "/static/js/769.5eade587.chunk.js.map"
+    "769.aff3ab6d.chunk.js.map": "/static/js/769.aff3ab6d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.762a8ac2.css",
-    "static/js/main.1e5c9a54.js"
+    "static/css/main.ef3824c7.css",
+    "static/js/main.cf5fad9c.js"
   ]
 }
